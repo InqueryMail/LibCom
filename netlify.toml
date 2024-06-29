@@ -1,5 +1,5 @@
 [build]
-  publish = "build" # Change to your output directory if different
+  publish = "dist" # Change to your output directory if different
   command = "npm run build" # Ensure this matches your build command
 
 [[redirects]]
