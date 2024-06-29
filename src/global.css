@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poly:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Salsa:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ribeye+Marrow:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous:wght@400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  line-height: normal;
+  background: #212121;
+}
+:root {
+  /* fonts */
+  --description: Poppins;
+  --font-baloo-2: "Baloo 2";
+  --font-open-sans: "Open Sans";
+  --font-roboto: Roboto;
+  --font-salsa: Salsa;
+  --font-saira: Saira;
+  --font-ribeye-marrow: "Ribeye Marrow";
+  --font-short-stack: "Short Stack";
+  --font-poly: Poly;
+  --font-righteous: Righteous;
+
+  /* font sizes */
+  --description-size: 12px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-6xl: 25px;
+  --font-size-xl: 20px;
+  --font-size-31xl: 50px;
+  --font-size-11xl: 30px;
+  --font-size-21xl: 40px;
+  --font-size-45xl: 64px;
+  --font-size-19xl: 38px;
+  --font-size-32xl: 51px;
+  --font-size-5xl: 24px;
+  --font-size-lgi: 19px;
+  --font-size-17xl: 36px;
+  --font-size-3xl: 22px;
+  --font-size-10xl: 29px;
+
+  /* Colors */
+  --color-gray-100: #252525;
+  --color-gray-200: #212121;
+  --color-gray-300: rgba(255, 255, 255, 0.65);
+  --color-burlywood-100: #d2ae6d;
+  --color-burlywood-200: rgba(210, 174, 109, 0);
+  --color-dimgray-100: #525c60;
+  --color-dimgray-200: #525151;
+  --color-white: #fff;
+  --color-dodgerblue: #0a66c2;
+  --color-palegoldenrod: #e2de94;
+  --color-whitesmoke-100: #f4f4f4;
+  --color-whitesmoke-200: #eee;
+  --color-darkslategray: #274c5b;
+  --color-darkseagreen-100: #7cbd8e;
+  --color-darkseagreen-200: #7eb693;
+  --color-moccasin: #f9eab6;
+  --color-silver-100: #c5bec1;
+  --color-silver-200: #b6bfc2;
+  --color-palevioletred: #ce4d74;
+  --color-gainsboro-100: #d9d9d9;
+  --color-gainsboro-200: #d3dad6;
+
+  /* Gaps */
+  --gap-6xl: 25px;
+  --gap-7xl-5: 26.5px;
+  --gap-xl: 20px;
+  --gap-mini: 15px;
+  --gap-base: 16px;
+  --gap-lg: 18px;
+  --gap-28xl: 47px;
+  --gap-4xl: 23px;
+  --gap-56xl: 75px;
+  --gap-18xl: 37px;
+  --gap-lgi: 19px;
+  --gap-15xl: 34px;
+  --gap-mid: 17px;
+  --gap-3xs: 10px;
+  --gap-43xl: 62px;
+  --gap-12xl: 31px;
+  --gap-36xl: 55px;
+  --gap-8xl: 27px;
+  --gap-19xl: 38px;
+
+  /* Paddings */
+  --padding-15xl: 34px;
+  --padding-51xl: 70px;
+  --padding-4xl: 23px;
+  --padding-16xl: 35px;
+  --padding-12xs: 1px;
+  --padding-23xl: 42px;
+  --padding-22xl: 41px;
+  --padding-2xl: 21px;
+  --padding-11xs: 2px;
+  --padding-xl: 20px;
+  --padding-77xl: 96px;
+  --padding-3xs: 10px;
+  --padding-124xl: 143px;
+  --padding-21xl: 40px;
+  --padding-41xl: 60px;
+  --padding-43xl: 62px;
+  --padding-74xl: 93px;
+  --padding-24xl-5: 43.5px;
+  --padding-9xl: 28px;
+  --padding-2xs: 11px;
+  --padding-mid: 17px;
+  --padding-lgi: 19px;
+  --padding-4xs: 9px;
+  --padding-7xl: 26px;
+  --padding-13xl: 32px;
+  --padding-58xl: 77px;
+  --padding-19xl: 38px;
+  --padding-81xl: 100px;
+  --padding-46xl: 65px;
+  --padding-18xl-8: 37.8px;
+  --padding-lg: 18px;
+  --padding-31xl: 50px;
+  --padding-143xl-8: 162.8px;
+  --padding-87xl: 106px;
+  --padding-11xl: 30px;
+  --padding-8xl-5: 27.5px;
+  --padding-49xl-8: 68.8px;
+  --padding-26xl: 45px;
+
+  /* Border radiuses */
+  --br-8xs: 5px;
+  --br-31xl: 50px;
+  --br-7xs: 6px;
+  --br-base: 16px;
+  --br-2xs: 11px;
+  --br-5xs: 8px;
+  --br-6xl: 25px;
+  --br-xl: 20px;
+}
