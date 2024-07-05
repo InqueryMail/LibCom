@@ -11,18 +11,7 @@ const ShopingBags = [
     id: 1,
     image: SB1,
   },
-  {
-    id: 2,
-    image: SB2,
-  },
-  {
-    id: 3,
-    image: SB3,
-  },
-  {
-    id: 4,
-    image: SB4,
-  },
+
   {
     id: 5,
     image: SB5,
@@ -34,6 +23,18 @@ const ShopingBags = [
   {
     id: 7,
     image: SB7,
+  },
+  {
+    id: 2,
+    image: SB2,
+  },
+  {
+    id: 3,
+    image: SB3,
+  },
+  {
+    id: 4,
+    image: SB4,
   },
 ];
 

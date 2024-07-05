@@ -1,6 +1,4 @@
-import PropTypes from "prop-types";
-
-const ContactInfos = ({
+const ContactInfo = ({
   className = "",
   contact,
   redirect,
@@ -35,16 +33,7 @@ const ContactInfos = ({
   );
 };
 
-ContactInfos.propTypes = {
-  className: PropTypes.string,
-  contact: PropTypes.string,
-  redirect: PropTypes.string.isRequired,
-  target: PropTypes.string,
-  heading: PropTypes.string,
-  icon: PropTypes.string,
-};
-
-const AboutUa = ({ className = "" }) => {
+const AboutUs = ({ className = "" }) => {
   return (
     <div
       className={`w-full box-border max-w-full overflow-hidden flex flex-col items-center justify-center p-2.5 leading-[normal] tracking-[normal] border-r-[10px] border-solid border-burlywood-200 border-l-[10px] ${className}`}
@@ -76,14 +65,14 @@ const AboutUa = ({ className = "" }) => {
               </div>
             </div>
             <div className="w-[372px] flex flex-col items-start justify-start py-0 pr-5 pl-0 box-border gap-[20px] max-w-full">
-              <ContactInfos
+              <ContactInfo
                 contact="rakesh@libracom.org"
                 redirect="mailto:"
                 target="_blank"
                 heading="Mail"
                 icon="/mail.svg"
               />
-              <ContactInfos
+              <ContactInfo
                 contact="+91 9825700741"
                 redirect="tel:"
                 target="_blank"
@@ -98,8 +87,4 @@ const AboutUa = ({ className = "" }) => {
   );
 };
 
-AboutUa.propTypes = {
-  className: PropTypes.string,
-};
-
-export default AboutUa;
+export default AboutUs;

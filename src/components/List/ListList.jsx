@@ -1,18 +1,27 @@
 import {
-  ComesticsPackaging,
-  DryFruitPackaging,
-  FoodPackaging,
-  IceCreamAndKulfiIndustries,
   ShopingBags,
+  IceCreamAndKulfiIndustries,
+  FoodPackaging,
   TeaIndustries,
+  DryFruitPackaging,
+  ComesticsPackaging,
 } from "../../../public/images/index";
 
 const ListList = [
-  ComesticsPackaging,
-  DryFruitPackaging,
-  FoodPackaging,
-  IceCreamAndKulfiIndustries,
   ShopingBags,
+  IceCreamAndKulfiIndustries,
+  FoodPackaging,
   TeaIndustries,
+  DryFruitPackaging,
+  ComesticsPackaging,
 ];
-export { ListList };
+const ListListList = [
+  "Shopping Bags",
+  "Ice Cream And Kulfi Industries",
+  "Food Packaging",
+  "Tea Industries",
+  "Dry Fruit Packaging",
+  "Comestics Packaging",
+];
+
+export { ListList, ListListList };

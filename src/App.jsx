@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useParams } from "react-router-dom";
 import {
   LandingPage,
   ProductsPage,
@@ -17,7 +17,8 @@ function App() {
         <Route path="inq" element={<InquiryList />} />
         <Route path="inquiry" element={<InquiryPage />} />
         <Route path="about" element={<AboutPage />} />
-        <Route path="list" element={<ListPage />} />
+        {/* <Route path="list" element={<ListPage />} /> */}
+        <Route path="list/:id" element={<ListPage />} />
       </Routes>
     </>
   );

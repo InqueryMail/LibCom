@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Arrow, Email, Locaiton, Mobile } from "../../../public/inquiry";
+import React from "react";
 
 const Map = (className) => {
   return (
@@ -24,7 +23,7 @@ const Map = (className) => {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Google Map"
-                  className="w-full h-screen"
+                  className="w-screen h-screen"
                 />
               </div>
             </div>

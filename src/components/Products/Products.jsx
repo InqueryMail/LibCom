@@ -17,10 +17,11 @@ const Products = () => {
           </div>
           <div className="self-stretch overflow-hidden flex flex-col items-center justify-center p-6 box-border max-w-full text-center text-17xl text-gainsboro-200 font-short-stack mq750:pt-[21px] mq750:pb-[21px] mq750:box-border">
             <div className="flex flex-col items-center justify-center gap-[62px] w-full ">
-              <div className="w-full overflow-hidden min-h-[532px] flex justify-evenly flex-row flex-wrap items-center gap-[100px] pt-0 pb-20 px-5 box-border lg:pl-[38px] lg:pr-[38px] lg:box-border">
+              <div className="w-full overflow-hidden min-h-[532px] flex justify-evenly flex-row flex-wrap items-center gap-[100px] pt-0 pb-20 box-border lg:box-border">
                 {CarouselList.map((item) => (
                   <ProductsCards
                     key={item.id}
+                    id={item.id}
                     image={item.image}
                     category={item.category}
                   />

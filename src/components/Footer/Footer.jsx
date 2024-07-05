@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="flex justify-between flex-wrap gap-15">
           <div className="mb-10 flex">
             <a href="/" className="flex items-center flex-col gap-4">
-              <img src="libra-logo.png" className="h-10" alt="FlowBite Logo" />
+              <img src="/libra-logo.png" className="h-10" alt="FlowBite Logo" />
               <div className="flex flex-col items-start justify-start">
                 <div className="flex flex-row items-start justify-start gap-[18px]">
                   <a href="/" target="_blank">
@@ -62,11 +62,16 @@ const Footer = () => {
             <div>
               <HeadingComponent children="Categories" />
               <ul className="text-gray-400 dark:text-gray-400 font-medium">
-                <LinkComponent to="/products" children="Incense stick box" />
-                <LinkComponent to="/products" children="Metalic sticker" />
-                <LinkComponent to="/products" children="Perfume Box" />
-                <LinkComponent to="/products" children="Pharma box" />
-                <LinkComponent to="/products" children="Packaging" /> <br />
+                <LinkComponent to="/list/0" children="Shopping Bags" />
+                <LinkComponent
+                  to="/list/1"
+                  children="Ice cream and Kufli Industries"
+                />
+                <LinkComponent to="/list/2" children="Food Packaging" />
+                <LinkComponent to="/list/3" children="Tea Industries" />
+                <LinkComponent to="/list/4" children="DryFruit Packaging" />
+                <LinkComponent to="/list/5" children="Comestics Packaging" />
+                <br />
               </ul>
             </div>
             <div>
@@ -82,7 +87,7 @@ const Footer = () => {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="w-full text-center">
           <span className="text-sm text-gray-400 text-center dark:text-gray-400">
-            © {year}{" "}
+            © {year + " "}
             <a href="/" className="hover:text-cyan-300">
               Libra Communiction
             </a>

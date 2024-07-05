@@ -1,4 +1,3 @@
-import TeaIndustries from "../../public/images/Tea Industries/TeaIndustries";
 import { NavBar, Hero, HomeProducts, Footer, Map } from "../components";
 
 const LandingPage = () => {

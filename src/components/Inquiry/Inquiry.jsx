@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import Countries from "./Countries";
 import OrganizationTypeList from "./OrganizationType";
-import { Arrow, Email, Locaiton, Mobile } from "../../../public/inquiry.jsx"; // Corrected import
+import { Arrow, Email, Locaiton, Mobile } from "../../../public/inquiry.jsx";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -64,7 +63,7 @@ const Inquiry = ({ className = "" }) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <div
         className={`relative flex items-top justify-center h-full ${className}`}
       >
@@ -80,7 +79,9 @@ const Inquiry = ({ className = "" }) => {
                     Say something to start a Chat!
                   </p>
                   <div className="flex items-center mt-8 text-gray-600">
-                    <Locaiton />
+                    <div className="h-[32] w-[32]">
+                      <Locaiton />
+                    </div>
                     <div className="ml-4 text-md tracking-wide font-semibold max-w-[345px] text-left break-words">
                       Pushpraj Industrial Estate, B-53, Nutan Mill Rd, near City
                       Gold Cinema, Compount, Bapunagar, Ahmedabad, Gujarat
@@ -88,7 +89,9 @@ const Inquiry = ({ className = "" }) => {
                     </div>
                   </div>
                   <div className="flex items-center mt-2 text-gray-600">
-                    <Mobile />
+                    <div className="h-[32] w-[32]">
+                      <Mobile />
+                    </div>
                     <div className="ml-4 text-md tracking-wide font-semibold w-40">
                       <a
                         href="tel:+919825700741"
@@ -100,7 +103,9 @@ const Inquiry = ({ className = "" }) => {
                     </div>
                   </div>
                   <div className="flex items-center mt-2 text-gray-600">
-                    <Email />
+                    <div className="h-[32] w-[32]">
+                      <Email />
+                    </div>
                     <div className="ml-4 text-md tracking-wide font-semibold w-40">
                       <a
                         href="mailto:rakesh@libracom.org"
@@ -239,7 +244,7 @@ const Inquiry = ({ className = "" }) => {
                     <button
                       id="dropdown-organization-type-button"
                       data-dropdown-toggle="dropdown-organization-type"
-                      className="flex-shrink-0 z-10 w-full inline-flex items-center justify-between py-3 px-3 h-full text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+                      className="flex-shrink-0 z-9 w-full inline-flex items-center justify-between py-3 px-3 h-full text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
                       type="button"
                     >
                       <span>
@@ -315,12 +320,8 @@ const Inquiry = ({ className = "" }) => {
         draggable
         pauseOnHover
       />
-    </React.Fragment>
+    </>
   );
-};
-
-Inquiry.propTypes = {
-  className: PropTypes.string,
 };
 
 export default Inquiry;

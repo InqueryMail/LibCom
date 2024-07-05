@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import HomeProductsList from "./HomeProductsList";
 
 const Card = ({
@@ -50,7 +49,7 @@ const Card = ({
   );
 };
 
-const HomeProducts = ({ className = "", heading, list }) => {
+const HomeProducts = ({ className = "", heading }) => {
   return (
     <section
       className={`self-stretch overflow-hidden flex flex-col items-start justify-start max-w-full text-left text-45xl text-silver-100 font-salsa ${className}`}
@@ -85,10 +84,6 @@ const HomeProducts = ({ className = "", heading, list }) => {
       </div>
     </section>
   );
-};
-
-HomeProducts.propTypes = {
-  className: PropTypes.string,
 };
 
 export default HomeProducts;
