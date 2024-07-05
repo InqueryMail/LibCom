@@ -5,6 +5,7 @@ import {
   InquiryPage,
   AboutPage,
   InquiryList,
+  ListPage,
 } from "./pages";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="inq" element={<InquiryList />} />
         <Route path="inquiry" element={<InquiryPage />} />
         <Route path="about" element={<AboutPage />} />
+        <Route path="list" element={<ListPage />} />
       </Routes>
     </>
   );

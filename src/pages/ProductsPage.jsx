@@ -6,7 +6,7 @@ const ProductsPage = () => {
     <div>
       <NavBar />
       <Carousel />
-      <Products heading={"Catalog of Offerings"} list={"carousel"} />
+      <Products />
       <Footer />
     </div>
   );

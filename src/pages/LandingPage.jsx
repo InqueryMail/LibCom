@@ -1,11 +1,12 @@
-import { NavBar, Hero, Products, Footer, Map } from "../components";
+import TeaIndustries from "../../public/images/Tea Industries/TeaIndustries";
+import { NavBar, Hero, HomeProducts, Footer, Map } from "../components";
 
 const LandingPage = () => {
   return (
     <>
       <NavBar />
       <Hero />
-      <Products heading={"Catalog of Offerings"} list={"products"} />
+      <HomeProducts heading={"Catalog of Offerings"} list={"products"} />
       <Map />
       <Footer />
     </>

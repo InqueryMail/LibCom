@@ -7,7 +7,6 @@ import "tailwindcss/tailwind.css";
 import "flowbite/dist/flowbite.min.css";
 import "flowbite";
 import App from "./App";
-
 const container = document.getElementById("root");
 const root = createRoot(container);
 

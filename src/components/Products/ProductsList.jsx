@@ -1,77 +1,17 @@
-const ProductsList = [
-  {
-    id: 1,
-    heading: "WE",
-    perfume: "/rectangle-223-797@2x.png",
-    heading1: "PERFUME BOX",
-    para: "Unveil elegance with our  box packaging - a treasure trove of luxury in every detail",
-    headingPadding: null,
-    frameDivColor: null,
-    paraTransform: null,
-  },
-  {
-    id: 2,
-    heading: "DESIGN",
-    perfume: "/incense@2x.png",
-    heading1: "INCENSE STICK BOX",
-    para: "Unlock tranquility with our incense stick box – a sanctuary of serene scents",
-    headingPadding: "0px 0px 68px",
-    frameDivColor: "#7cbd8e",
-    paraTransform: "scale(1.471)",
-  },
-  {
-    id: 3,
-    heading: "PACKAGE",
-    perfume: "/rectangle-225-813@2x.png",
-    heading1: "FOOD PACKAGING",
-    para: "Savor freshness with every unwrap of our food packaging.",
-    headingPadding: "0px 0px 68px",
-    frameDivColor: "#CE4D74",
-    paraTransform: "scale(1.471)",
-  },
-];
+import SP1 from "../../../public/images/Shoping Bags/SP1.jpg";
+import ICKI from "../../../public/images/Ice Cream & Kulfi Industries/ICKI1.jpg";
+import FP1 from "../../../public/images/Food Packaging/FP1.jpg";
+import TI1 from "../../../public/images/Tea Industries/TI1.jpg";
+import DFP1 from "../../../public/images/Dry Fruit Packaging/DFP1.jpg";
+import CP1 from "../../../public/images/Comestics Packaging/CP1.jpg";
 
 const CarouselList = [
-  {
-    id: 1,
-    heading: "WE",
-    perfume: "/rectangle-223-797@2x.png",
-    heading1: "PERFUME BOX",
-    para: "Unveil elegance with our  box packaging - a treasure trove of luxury in every detail",
-    headingPadding: null,
-    frameDivColor: null,
-    paraTransform: null,
-  },
-  {
-    id: 2,
-    heading: "DESIGN",
-    perfume: "/incense@2x.png",
-    heading1: "INCENSE STICK BOX",
-    para: "Unlock tranquility with our incense stick box – a sanctuary of serene scents",
-    headingPadding: "0px 0px 68px",
-    frameDivColor: "#7cbd8e",
-    paraTransform: "scale(1.471)",
-  },
-  {
-    id: 3,
-    heading: "PACKAGE",
-    perfume: "/rectangle-225-813@2x.png",
-    heading1: "FOOD PACKAGING",
-    para: "Savor freshness with every unwrap of our food packaging. testing for doing component",
-    headingPadding: "0px 0px 68px",
-    frameDivColor: "#CE4D74",
-    paraTransform: "scale(1.471)",
-  },
-  {
-    id: 4,
-    heading: "PACKAGE",
-    perfume: "/rectangle-225-813@2x.png",
-    heading1: "FOOD PACKAGING",
-    para: "Savor freshness with every unwrap of our food packaging. testing for doing component",
-    headingPadding: "0px 0px 68px",
-    frameDivColor: "#CE4D74",
-    paraTransform: "scale(1.471)",
-  },
+  { id: 1, image: SP1, categorys: "Shoping Bags" },
+  { id: 2, image: ICKI, categorys: "Ice Cream & Kulfi Industries" },
+  { id: 3, image: FP1, categorys: "Food Packaging" },
+  { id: 4, image: TI1, categorys: "Tea Industries" },
+  { id: 5, image: DFP1, categorys: "Dry Fruit Packaging" },
+  { id: 6, image: CP1, categorys: "Comestics Packaging" },
 ];
 
-export { ProductsList, CarouselList };
+export { CarouselList };
