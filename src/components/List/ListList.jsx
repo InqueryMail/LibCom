@@ -1,10 +1,18 @@
-const ListList = [
-  {
-    id: 1,
-    image:
-      "https://libraprintpack.com/wp-content/uploads/2017/04/A-B-Jewels.jpg",
-    category: "Shoping Bags",
-  },
-];
+import {
+  ComesticsPackaging,
+  DryFruitPackaging,
+  FoodPackaging,
+  IceCreamAndKulfiIndustries,
+  ShopingBags,
+  TeaIndustries,
+} from "../../../public/images/index";
 
+const ListList = [
+  ComesticsPackaging,
+  DryFruitPackaging,
+  FoodPackaging,
+  IceCreamAndKulfiIndustries,
+  ShopingBags,
+  TeaIndustries,
+];
 export { ListList };

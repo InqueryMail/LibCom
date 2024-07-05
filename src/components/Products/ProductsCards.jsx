@@ -3,14 +3,14 @@ const handleClick = (e) => {
   //
 };
 
-const ProductsCards = ({ image, categorys }) => {
+const ProductsCards = ({ image, category }) => {
   return (
     <div className=" max-w-xs bg-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <img className="rounded-t-lg h-[480px] m-auto" src={image} alt="" />
 
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-          {categorys}
+          {category}
         </h5>
 
         <a

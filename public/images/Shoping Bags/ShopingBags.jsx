@@ -1,39 +1,39 @@
-import SP1 from "./SP1.jpg";
-import SP2 from "./SP2.jpg";
-import SP3 from "./SP3.jpg";
-import SP4 from "./SP4.jpg";
-import SP5 from "./SP5.jpg";
-import SP6 from "./SP6.jpg";
-import SP7 from "./SP7.jpg";
+import SB1 from "./SB1.jpg";
+import SB2 from "./SB2.jpg";
+import SB3 from "./SB3.jpg";
+import SB4 from "./SB4.jpg";
+import SB5 from "./SB5.jpg";
+import SB6 from "./SB6.jpg";
+import SB7 from "./SB7.jpg";
 
 const ShopingBags = [
   {
     id: 1,
-    image: SP1.jpg,
+    image: SB1,
   },
   {
     id: 2,
-    image: SP2.jpg,
+    image: SB2,
   },
   {
     id: 3,
-    image: SP3.jpg,
+    image: SB3,
   },
   {
     id: 4,
-    image: SP4.jpg,
+    image: SB4,
   },
   {
     id: 5,
-    image: SP5.jpg,
+    image: SB5,
   },
   {
     id: 6,
-    image: SP6.jpg,
+    image: SB6,
   },
   {
     id: 7,
-    image: SP7.jpg,
+    image: SB7,
   },
 ];
 
