@@ -7,7 +7,6 @@ const ProductsPage = () => {
       <NavBar />
       <Carousel />
       <Products />
-
       <Footer />
     </div>
   );

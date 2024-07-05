@@ -1,10 +1,17 @@
+### Website created for Libra Communication.
 
-  # Intern
+## Technologies used:
 
-  Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code>
+#### React.js, Tailwind CSS, Python Flask, Figma, MongoDB...
 
-  To preview and run the project on your device:
-  1) Open project folder in <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
-  2) In the terminal, run `npm install`
-  3) Run `npm start` to view project in browser
-  
+## TeamLeader:
+
+#### Heet Patel (BackEnd Developer)
+
+## Developers/Designer:
+
+#### Himesh Khatri (FrontEnd Developer)
+
+#### Riya Vaghela (UX/UI Designer)
+
+#### Shubham Shah (FrontEnd Developer)
