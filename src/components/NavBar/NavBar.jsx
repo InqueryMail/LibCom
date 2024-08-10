@@ -1,5 +1,19 @@
 import React from "react";
 
+const Link = ({ href, children }) => {
+  return (
+    <li>
+      <a
+        href={href}
+        className="block py-2 px-3 text-white hover:text-cyan-300 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+        aria-current="page"
+      >
+        {children}
+      </a>
+    </li>
+  );
+};
+
 const NavBar = () => {
   return (
     <nav className="border-gray-200 w-full ">
@@ -31,39 +45,10 @@ const NavBar = () => {
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex flex-col text-center px-4 md:p-0 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 mq750:mt-4">
-            <li>
-              <a
-                href="/"
-                className="block py-2 px-3 text-white hover:text-cyan-300 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                aria-current="page"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="/products"
-                className="block py-2 px-3 text-white hover:text-cyan-300 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 md:dark:hover:bg-transparent"
-              >
-                Products
-              </a>
-            </li>
-            <li>
-              <a
-                href="/inquiry"
-                className="block py-2 px-3 text-white hover:text-cyan-300 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 md:dark:hover:bg-transparent"
-              >
-                Inquiry
-              </a>
-            </li>
-            <li>
-              <a
-                href="/about"
-                className="block py-2 px-3 text-white hover:text-cyan-300 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 md:dark:hover:bg-transparent"
-              >
-                AboutUs
-              </a>
-            </li>
+            <Link href={"/"} children={"Home"} />
+            <Link href={"/products"} children={"Products"} />
+            <Link href={"/inquiry"} children={"Inquiry"} />
+            <Link href={"/about"} children={"About Us"} />
           </ul>
         </div>
       </div>

@@ -16,6 +16,14 @@ const HeadingComponent = ({ children }) => {
   );
 };
 
+const SocialMediaComponent = ({ src, alt, href }) => {
+  return (
+    <a href={href} target="_blank">
+      <img className="h-6 w-6 relative min-h-[24px]" loading="lazy" src={src} />
+    </a>
+  );
+};
+
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
@@ -27,33 +35,12 @@ const Footer = () => {
               <img src="/libra-logo.png" className="h-10" alt="FlowBite Logo" />
               <div className="flex flex-col items-start justify-start">
                 <div className="flex flex-row items-start justify-start gap-[18px]">
-                  <a href="/" target="_blank">
-                    <img
-                      className="h-6 w-6 relative min-h-[24px]"
-                      loading="lazy"
-                      alt=""
-                      src="/-twitter-853.svg"
-                    />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/libraprintpack"
-                    target="_blank"
-                  >
-                    <img
-                      className="h-6 w-6 relative min-h-[24px]"
-                      loading="lazy"
-                      alt=""
-                      src="/-instagram-855.svg"
-                    />
-                  </a>
-                  <a href="/" target="_blank">
-                    <img
-                      className="h-6 w-6 relative min-h-[24px]"
-                      loading="lazy"
-                      alt=""
-                      src="/linkedin-logo.svg"
-                    />
-                  </a>
+                  <SocialMediaComponent src={"/-twitter-853.svg"} href={"/"} />
+                  <SocialMediaComponent
+                    src={"/-instagram-855.svg"}
+                    href={"https://www.instagram.com/libraprintpack"}
+                  />
+                  <SocialMediaComponent src={"/linkedin-logo.svg"} href={"/"} />
                 </div>
               </div>
             </a>
